@@ -1,6 +1,5 @@
 // Grab the articles as a json
 $.getJSON("/articles", function(data) {
-  
     // For each one
     for (var i = 0; i < data.length; i++) {
       // Display the apropos information on the page
@@ -10,7 +9,7 @@ $.getJSON("/articles", function(data) {
       let imgDiv = $('<div>').addClass('card-img-top');
       imgDiv.append(data[i].image)
       artDiv.append("<p data-id='" + data[i]._id + "'>" + data[i].title + "</p>");
-      cardBody.append("<a href='http://www.sportingnews.com" + data[i].link + "'> Read this Story Here </a>");
+      cardBody.append("<a target='_blank' href='http://www.sportingnews.com" + data[i].link + "'> Read this Story Here </a>");
       artDiv.append(btnDiv).append(cardBody)
       $("#articles").append(artDiv);
     }
