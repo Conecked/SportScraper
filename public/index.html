@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Covered+By+Your+Grace|Orbitron|Patrick+Hand" rel="stylesheet">
+    <title>sportScraper</title>
+    <style>
+      body { 
+        background: url('https://cdn.pixabay.com/photo/2015/07/31/11/45/library-869061__340.jpg') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+      h1 {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 100px;
+        text-shadow:
+          -1px -1px 0 red,
+		      1px -1px 0 red,
+		      -1px 1px 0 red,
+		      1px 1px 0 red;
+      }
+      h2 {
+        font-family: 'Orbitron', sans-serif;
+        color: gray;
+        text-shadow:
+		        -1.5px -1.5px 0 #000,
+		        1.5px -1.5px 0 #000,
+		        -1.5px 1.5px 0 #000,
+		        1.5px 1.5px 0 #000;
+      }
+      h5 {
+        background: red;
+        margin-bottom: 0%;
+      }
+      #wrapper {        
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+      }
+      #articles {
+        font-family: 'Acme', sans-serif;
+        height: 700px;
+        overflow: auto;
+        width: 70%;
+        margin-top: 15%;
+        margin-bottom: 15%;
+      }
+      p {
+        align-content: center;
+        margin-bottom: 0%;
+        padding: 2%;
+      }
+      #notes {
+        font-family: 'Patrick Hand', cursive;
+        width: 25%;
+        height: 50%;
+        float: right;
+        margin-left: 5%;
+        margin-top: 20%;
+      }
+      textarea, input {
+        display: block;
+        width: 100%;
+        background-color: lightgray;
+      }
+      input {
+        font-family: 'Covered By Your Grace', cursive;
+        height: 36px;
+        font-size: 24px;
+      }
+      textarea {
+        font-family: 'Covered By Your Grace', cursive;
+        height: 200px;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1 style="text-align:center">sportScraper</h1>
+      <h2 style="text-align:center"><i>you ... can ... read .. all ... these ... pages!</i></h2>
+      <div id="notes"></div>
+      <div id="articles"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
