@@ -28,7 +28,7 @@ app.use(express.static("public"));
 
 // Connect to the Mongo DB
 // mongoose.connect("mongodb://localhost/sportScraper", { useNewUrlParser: true });
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/sportScraper";
 
 // Set mongoose to leverage built in JavaScript ES6 Promises
 // Connect to the Mongo DB
